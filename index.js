@@ -9,17 +9,22 @@
 
 console.log('hello world')
 
+
+
 /* Challenge #1
  * Create a variable and print the value
  *
  * Steps:
  * 1. Create a variable and assign it any value
  * 2. Use `console.log` to print out your variable
- *
+ 
  * Example Output: n/a
  */
 
 // TODO: ADD CODE HERE
+ let phone = 'nice';
+ console.log(phone)
+
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -34,6 +39,11 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+const firstName = 'Dax';
+const lastName = ' Palmer';
+console.log(firstName + lastName)
+
+
 /* Challenge #3
  * Calculate the total price rounded to two decimals
  *
@@ -47,6 +57,12 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+const price = parseFloat(5.99)
+const quantity = parseInt(6.99)
+const total = (price * quantity) 
+
+console.log(total)
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -64,6 +80,18 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+const weather = 'Rainy';
+let message;
+
+if (weather === 'Sunny') {
+message = "Yay! It's sunny outside"; 
+} else {
+    message = "Aww! It's not sunny outside";
+    console.log(message)
+}
+
+
+
 /* Challenge #5
  * Create a function that returns any string
  *
@@ -77,6 +105,12 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+function myFunction () {
+    return 'I called a function!'; 
+}
+console.log(myFunction());
+
+
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
  *
@@ -89,6 +123,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+ myFunction = () => {
+    return 'I called an arrow function!'; 
+}
+console.log(myFunction());
+
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
@@ -103,6 +142,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+function stringToUpper (str) {
+return str.toUpperCase();
+} 
+console.log(stringToUpper("Why am I screaming"))
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -120,3 +164,14 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+function multiplyByTwo (number, number2) {
+    return (number * number2); 
+}
+
+const num1 = multiplyByTwo(1,2);
+const num2 = multiplyByTwo(5,3);
+const num3 = multiplyByTwo(10,5);
+console.log(num1) 
+console.log(num2)
+console.log(num3)
